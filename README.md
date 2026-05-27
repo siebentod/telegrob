@@ -25,14 +25,73 @@
 
 ```
 src/
+├── App.tsx
+├── main.tsx
+├── globals.css
+├── window.css
+├── vite-env.d.ts
 ├── assets/
+├── shared/
 ├── components/
+│   ├── auth-session/
+│   │   ├── auth.tsx
+│   │   ├── index.tsx
+│   │   └── session.tsx
+│   ├── channel-view/
+│   │   ├── channel-music-progress-slider.tsx
+│   │   ├── channel-post-group.tsx
+│   │   ├── channel-post.tsx
+│   │   ├── channel-toolbar-filter.tsx
+│   │   ├── channel-toolbar-load.tsx
+│   │   ├── index.tsx
+│   │   └── posts-list.tsx
+│   ├── modals/
+│   │   ├── auth-session-modal.tsx
+│   │   ├── channel-catalog-filters-modal.tsx
+│   │   ├── channels-folder-modal.tsx
+│   │   ├── download-path-modal.tsx
+│   │   ├── index.tsx
+│   │   └── lastfm-auth-modal.tsx
+│   ├── ui/
+│   │   ├── button.tsx
+│   │   ├── calendar.tsx
+│   │   └── popover.tsx
+│   ├── channels.tsx
+│   ├── global-music-queue-bar.tsx
+│   ├── lastfm-music-bridge.tsx
+│   └── require-session.tsx
 ├── db/
+│   ├── CachedChannelsDB.ts
+│   ├── ChannelHistoryCheckpointDB.ts
+│   ├── ChannelPostsDB.ts
+│   ├── index.ts
+│   ├── migrate.ts
+│   ├── migrations/
+│   │   ├── index.ts
+│   │   └── types.ts
+│   ├── schema.ts
+│   └── utils.ts
 ├── hooks/
-├── lib/
+│   ├── use-auth.ts
+│   ├── use-channel-music-player.ts
+│   ├── use-channels-context-menu.ts
+│   ├── use-load-posts-data.ts
+│   ├── use-modal.ts
+│   └── use-session.ts
 ├── pages/
-├── store/
-└── App.tsx
+│   ├── channel-page.tsx
+│   └── home-page.tsx
+└── store/
+    ├── main/
+    │   ├── channel-view/
+    │   ├── index.ts
+    │   ├── lastfm-auth/
+    │   ├── music-player/
+    │   └── session/
+    └── modal/
+        ├── index.ts
+        └── keys.ts
+
 src-tauri/
 └── src/
     ├── lastfm/
