@@ -13,10 +13,10 @@
 <table style="width:100%;border-collapse:collapse;">
 	<tr>
 		<td style="width:50%;padding:4px;vertical-align:top;">
-			<img src="public/screenshots/telegrob-1.png" alt="Telegrob - Main view" style="width:100%;height:auto;" />
+			<img src="public/screenshots/1.png" alt="Telegrob - Main view" style="width:100%;height:auto;" />
 		</td>
 		<td style="width:50%;padding:4px;vertical-align:top;">
-			<img src="public/screenshots/telegrob-2.png" alt="Telegrob - Channel view" style="width:100%;height:auto;" />
+			<img src="public/screenshots/2.png" alt="Telegrob - Channel view" style="width:100%;height:auto;" />
 		</td>
 	</tr>
 </table>
@@ -26,12 +26,6 @@
 ```
 src/
 ├── App.tsx
-├── main.tsx
-├── globals.css
-├── window.css
-├── vite-env.d.ts
-├── assets/
-├── shared/
 ├── components/
 │   ├── auth-session/
 │   │   ├── auth.tsx
@@ -52,25 +46,20 @@ src/
 │   │   ├── download-path-modal.tsx
 │   │   ├── index.tsx
 │   │   └── lastfm-auth-modal.tsx
-│   ├── ui/
-│   │   ├── button.tsx
-│   │   ├── calendar.tsx
-│   │   └── popover.tsx
+│   ├── require-session.tsx
 │   ├── channels.tsx
 │   ├── global-music-queue-bar.tsx
 │   ├── lastfm-music-bridge.tsx
-│   └── require-session.tsx
+│   └── ui/
 ├── db/
 │   ├── CachedChannelsDB.ts
 │   ├── ChannelHistoryCheckpointDB.ts
 │   ├── ChannelPostsDB.ts
 │   ├── index.ts
 │   ├── migrate.ts
-│   ├── migrations/
-│   │   ├── index.ts
-│   │   └── types.ts
+│   ├── utils.ts
 │   ├── schema.ts
-│   └── utils.ts
+│   └── migrations/
 ├── hooks/
 │   ├── use-auth.ts
 │   ├── use-channel-music-player.ts
@@ -91,7 +80,6 @@ src/
     └── modal/
         ├── index.ts
         └── keys.ts
-
 src-tauri/
 └── src/
     ├── lastfm/
